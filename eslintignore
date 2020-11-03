@@ -1,0 +1,3 @@
+dist/
+*[s|S]tyled.jsx
+node_modules

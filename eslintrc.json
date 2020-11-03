@@ -1,0 +1,129 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "globals": {
+        "Promise": true
+    },
+    "plugins": [
+        "prettier",
+        "react-hooks",
+        "react"
+    ],
+    "rules": {
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "camelcase": "warn",
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "warn",
+            "windows"
+        ],
+        "max-depth": [
+            "error",
+            3
+        ],
+        "max-params": [
+            "warn",
+            3
+        ],
+        "newline-after-var": [
+            "error",
+            "always"
+        ],
+        "newline-before-return": "error",
+        "newline-per-chained-call": [
+            "error",
+            {
+                "ignoreChainWithDepth": 2
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "off"
+        ],
+        "no-param-reassign": [
+            "off"
+        ],
+        "no-nested-ternary": "error",
+        "no-use-before-define": [
+            "off"
+        ],
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "CallExpression[callee.name='setTimeout']",
+                "message": "Do not use setTimeout to get around Bugs."
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectExpression": {
+                    "minProperties": 2,
+                    "multiline": true,
+                    "consistent": true
+                }
+            }
+        ],
+        "object-property-newline": "warn",
+        "one-var-declaration-per-line": [
+            "error",
+            "initializations"
+        ],
+        "operator-linebreak": [
+            "off"
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 120,
+                "singleQuote": false,
+                "tabWidth": 4,
+                "trailingComma": "es5",
+                "endOfLine":"auto"
+            }
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/destructuring-assignment": [
+            "off"
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "react/jsx-filename-extension": [
+            "off"
+        ],
+        "react/prop-types": [
+            "off"
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+}
